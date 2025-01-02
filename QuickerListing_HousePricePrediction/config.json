@@ -1,0 +1,7 @@
+{
+    "DB_HOST_MONGO": "mongodb://localhost:27017/",
+    "DB_HOST_POSTGRES": "localhost",
+    "DATABASE_POSTGRES": "postgres",
+    "DB_USER_POSTGRES": "postgres",
+    "DB_PWD_POSTGRES": "Infy@123"
+}
