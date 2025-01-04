@@ -3,5 +3,5 @@
     "DB_HOST_POSTGRES": "localhost",
     "DATABASE_POSTGRES": "postgres",
     "DB_USER_POSTGRES": "postgres",
-    "DB_PWD_POSTGRES": "Infy@123"
+    "DB_PWD_POSTGRES": ""
 }
