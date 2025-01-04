@@ -4,7 +4,13 @@ import numpy as np
 from sklearn.model_selection import *
 from xgboost import XGBRegressor
 
-df=pd.read_csv("C://Users//Admin//Downloads//Programming for AI Project//Programming for AI Project//transformed_data.xls")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+file_path = os.path.join(script_dir, "transformed_data.xls")
+
+
+df = pd.read_csv(file_path)
 
 bedrooms = st.sidebar.selectbox("Bedrooms:",sorted(df['bedrooms'].unique().tolist()))
 bathrooms = st.sidebar.selectbox("Bathrooms:",sorted(df['bathrooms'].unique().tolist()))
