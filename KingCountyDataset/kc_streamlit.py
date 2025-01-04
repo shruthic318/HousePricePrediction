@@ -1,11 +1,14 @@
+import os
 import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import *
 from xgboost import XGBRegressor
 
-file_path = "transformed_data.xls"
 
+
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the script
+file_path = os.path.join(script_dir, "transformed_data.xls")  # Construct the file path
 df = pd.read_csv(file_path)
 
 bedrooms = st.sidebar.selectbox("Bedrooms:",sorted(df['bedrooms'].unique().tolist()))
