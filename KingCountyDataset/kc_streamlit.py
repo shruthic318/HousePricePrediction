@@ -4,11 +4,7 @@ import numpy as np
 from sklearn.model_selection import *
 from xgboost import XGBRegressor
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-
-file_path = os.path.join(script_dir, "transformed_data.xls")
-
+file_path = "transformed_data.xls"
 
 df = pd.read_csv(file_path)
 
